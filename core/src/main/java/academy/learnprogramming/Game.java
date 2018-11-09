@@ -1,5 +1,8 @@
 package academy.learnprogramming;
 
+import org.springframework.context.annotation.Bean;
+
+
 public interface Game {
     int getNumber();
     int getGuess();
