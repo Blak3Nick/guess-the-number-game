@@ -33,6 +33,8 @@ public class GameController {
     }
     @PostMapping(GameMappings.PLAY)
     public String procesMessage(@RequestParam int guess) {
-
+        log.info("guess= {}", guess);
+        gameService.checkGuess(guess);
+        return GameMappings.REDIRECT_PLAY;
     }
 }

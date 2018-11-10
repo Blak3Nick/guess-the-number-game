@@ -4,6 +4,7 @@ import academy.learnprogramming.Game;
 import academy.learnprogramming.MessageGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -11,6 +12,7 @@ import javax.annotation.PostConstruct;
 @Slf4j
 @Service
 public class GameServiceImpl implements GameService {
+
 
     private final Game game;
     private final MessageGenerator messageGenerator;
